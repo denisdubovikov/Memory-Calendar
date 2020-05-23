@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ListMemories" representedClassName="ListMemories" syncable="YES" codeGenerationType="class">
+        <relationship name="memory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Memory"/>
+    </entity>
+    <entity name="Memory" representedClassName="Memory" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="String" minValueString="0" maxValueString="100"/>
+        <attribute name="desc" attributeType="String"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="imageURL" attributeType="URI"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListMemories"/>
+    </entity>
+    <elements>
+        <element name="ListMemories" positionX="-274.79296875" positionY="-17.40234375" width="128" height="58"/>
+        <element name="Memory" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>
